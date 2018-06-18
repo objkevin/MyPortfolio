@@ -1,0 +1,11 @@
+@import "../node_modules/bootstrap/dist/css/bootstrap.css";
+@import "https://use.fontawesome.com/releases/v5.0.13/css/all.css";
+
+button:focus {
+  outline: none !important;
+}
+
+.App {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
