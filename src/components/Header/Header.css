@@ -2,6 +2,10 @@
   border: none;
 }
 
-.fa-facebook-square {
-  color: #3b5998;
+.nav-link {
+  color: white !important;
+}
+
+.active {
+  color: #00ff74 !important;
 }

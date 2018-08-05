@@ -22,12 +22,12 @@ class Header extends Component {
   render() {
     return (
       <nav
-        className="navbar navbar-expand-lg navbar-light bg-light sticky-top"
+        className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"
         style={{ height: "70px" }}
       >
         <div className="container">
           <button
-            className="navbar-toggler text-dark mr-auto"
+            className="navbar-toggler text-white mr-auto"
             style={{ width: "3rem" }}
             onClick={this.handleSetToggle}
           >
@@ -39,28 +39,44 @@ class Header extends Component {
               }
             />
           </button>
-          <a className="navbar-brand mr-0 mr-lg-3" href="/">
+          <a className="navbar-brand mr-0 mr-lg-3" href="/Home">
             Kevin Roman
           </a>
           <div className="navbar-nav">
             <ul className="navbar-nav navbar-left d-none d-lg-flex">
               <li>
-                <NavLink to="/Home" className="nav-link active">
+                <NavLink
+                  to="/Home"
+                  activeClassName="active"
+                  className="nav-link"
+                >
                   Home
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/Resume" className="nav-link">
+                <NavLink
+                  to="/Resume"
+                  activeClassName="active"
+                  className="nav-link"
+                >
                   Resume
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/Portfolio" className="nav-link">
+                <NavLink
+                  to="/Projects"
+                  activeClassName="active"
+                  className="nav-link"
+                >
                   Projects
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/Contact" className="nav-link">
+                <NavLink
+                  to="/Contact"
+                  activeClassName="active"
+                  className="nav-link"
+                >
                   Contact
                 </NavLink>
               </li>
@@ -94,7 +110,7 @@ class Header extends Component {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fab fa-twitter fa-lg text-primary" />
+                <i className="fab fa-twitter fa-lg" />
               </a>
             </li>
           </ul>
