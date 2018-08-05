@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Header.css";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 class Header extends Component {
   constructor(props) {
@@ -39,9 +39,9 @@ class Header extends Component {
               }
             />
           </button>
-          <a className="navbar-brand mr-0 mr-lg-3" href="/Home">
+          <Link className="navbar-brand mr-0 mr-lg-3" to="/Home">
             Kevin Roman
-          </a>
+          </Link>
           <div className="navbar-nav">
             <ul className="navbar-nav navbar-left d-none d-lg-flex">
               <li>

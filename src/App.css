@@ -9,3 +9,20 @@ button:focus {
   background-color: #f8f9fa;
   min-height: 100vh;
 }
+
+.anim {
+  animation: home 1200ms;
+}
+
+.jumbotron {
+  padding-top: 70px !important;
+}
+
+@keyframes home {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
