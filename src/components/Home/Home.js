@@ -45,15 +45,15 @@ class Home extends Component {
           />
           <div className="jumbotron jumbotron-fluid col-12 col-lg-7 bg-transparent">
             <p className="d-flex w-75 mb-3 mx-auto justify-content-around">
-              <span className="text-center">
-                <span className="font-weight-bold" style={{ color: "#5a5a5a" }}>
-                  Edad:{" "}
+              <span className="d-flex flex-wrap justify-content-center pr-2">
+                <span className="font-weight-bold px-2" style={{ color: "#5a5a5a" }}>
+                  Edad:
                 </span>
                 <span>23 años</span>
               </span>
-              <span className="text-center">
-                <span className="font-weight-bold" style={{ color: "#5a5a5a" }}>
-                  Estado Civil:{" "}
+              <span className="d-flex flex-wrap justify-content-center pl-2">
+                <span className="font-weight-bold px-2" style={{ color: "#5a5a5a" }}>
+                  Estado Civil:
                 </span>
                 <span>Soltero</span>
               </span>
