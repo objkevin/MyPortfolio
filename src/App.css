@@ -10,12 +10,34 @@ button:focus {
   min-height: 100vh;
 }
 
-.anim {
-  animation: home 1200ms;
+.card {
+  transition-duration: 400ms;
+  overflow: hidden;
+  cursor: pointer;
+  color: #000;
+}
+
+.card:hover img {
+  transition-duration: 400ms;
+  transform: scale(1.02);
+}
+
+.card:hover {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  color: #000;
+  text-decoration: unset;
+}
+
+.card img {
+  transition-duration: 400ms;
 }
 
 .jumbotron {
   padding-top: 70px !important;
+}
+
+.anim {
+  animation: home 1200ms;
 }
 
 @keyframes home {

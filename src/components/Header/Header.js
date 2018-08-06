@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Header.css";
 import { Link, NavLink } from "react-router-dom";
+import MenuMobile from "./MenuMobile";
 
 class Header extends Component {
   constructor(props) {
@@ -17,6 +18,8 @@ class Header extends Component {
     this.setState(prevState => ({
       isToggleOn: !prevState.isToggleOn
     }));
+    if (!this.state.isToggleOn) document.body.style.overflow = "hidden";
+    else document.body.style.overflow = "auto";
   };
 
   render() {
@@ -115,6 +118,9 @@ class Header extends Component {
             </li>
           </ul>
         </div>
+        {this.state.isToggleOn ? (
+          <MenuMobile handleSetToggle={this.handleSetToggle} />
+        ) : null}
       </nav>
     );
   }

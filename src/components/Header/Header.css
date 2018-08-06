@@ -9,3 +9,29 @@
 .active {
   color: #00ff74 !important;
 }
+
+.my-modal {
+  display: flex;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: unset;
+}
+
+.my-modal .my-modal-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.151);
+  overflow: unset;
+}
+
+.my-modal li a {
+  color: white;
+}
